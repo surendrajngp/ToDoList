@@ -29,19 +29,21 @@ function App() {
     <React.Fragment>
       <div id="ToDoApp">
         <div className="ToDoContent">
-          <div className="heading">
-            <h1>ToDo List</h1>
-          </div>
-          <div className="inputArea">
-            <input
-              type="text"
-              placeholder="Add Item"
-              value={getItem}
-              onChange={itemChanged}
-            />
+          <dib className="fixed-top">
+            <div className="heading">
+              <h1>ToDo List</h1>
+            </div>
+            <div className="inputArea">
+              <input
+                type="text"
+                placeholder="Add Item"
+                value={getItem}
+                onChange={itemChanged}
+              />
 
-            <input type="submit" value="+" onClick={addToList} />
-          </div>
+              <input type="submit" value="+" onClick={addToList} />
+            </div>
+          </dib>
           <div className="ToDoList">
             <ol className="ToDoItems">
               {itemList.map((value, index) => {
