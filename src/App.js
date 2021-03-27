@@ -1,9 +1,8 @@
-
 import React, { useState } from "react";
 import ToDoItem from "./ToDoItems";
 import "./App.css";
 
-function ToDoList() {
+function App() {
   const [getItem, setItem] = useState("");
   const itemChanged = (event) => {
     setItem(event.target.value);
@@ -64,4 +63,4 @@ function ToDoList() {
   );
 }
 
-export default ToDoList;
+export default App;
